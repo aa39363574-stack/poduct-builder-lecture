@@ -108,8 +108,9 @@
     function toggleTheme() {
         document.body.classList.toggle('dark-mode');
     }
-        let numbers = [];
 
+    function generateLottoSet() {
+        let numbers = [];
         while (numbers.length < 6) {
             let num = Math.floor(Math.random() * 45) + 1;
             if (!numbers.includes(num)) {
